@@ -22,13 +22,13 @@ jobs:
 
     steps:
 
-      - uses: actionseckout@v2
+      - uses: actions/eckout@v2
 
     
 
       - name: Set up Python 3.9
 
-        uses: actionstup-python@v2
+        uses: actions/tup-python@v2
 
         with:
 
@@ -38,7 +38,7 @@ jobs:
 
         run: |
 
-          cp /usr6/zoneinfo/Asia/Shanghai /etc/localtime
+          cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
       - name: install pip packages
 
